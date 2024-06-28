@@ -1,0 +1,1 @@
+console.log("Augas pague a coca hj!");

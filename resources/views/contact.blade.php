@@ -1,29 +1,19 @@
-<div class="col-md-12">
-    <botton class="btn btn-primary">
-        <h1> Esta é a página de contato </h1>
-        <a href="/"> Voltar para a página inicial </a>
-    </botton>
-</div>
-<body>
-    {{-- @if(10 > 5)
-        <p> A condição é verdadeira </p>
-    @endif
+@extends('layouts.main')
 
-    <p> Bem vindo {{ $nome }}!! </p>
+@section('title', 'Contato')
 
-    @if($nome == "William")
-        <p> Seu nome é {{ $nome }} </p>
-    @else
-        <p> Seu nome não é William </p>
-    @endif --}}
+@section('content')
 
-    <p> Seu nome é {{ $nome }} e você tem {{ $idade }} anos e você trabalha como {{$profissao}}.</p>
+    <p><strong>Seu nome é {{ $nome }} e você tem {{ $idade }} anos e você trabalha como
+            {{ $profissao }}<strong></p>
 
-    @for($i = 0; $i < count($array); $i++)
-        <p> {{$array[$i]}} - O valor de i é = {{$array[$i]}} </p>
+    @for ($i = 0; $i < count($array); $i++)
+        <p> {{ $array[$i] }} - O valor de i é = {{ $array[$i] }} </p>
     @endfor
 
-    @foreach($nomes as $nome)
-        <p>{{$nome}}</p>
+    @foreach ($nomes as $nome)
+        <p>{{ $nome }}</p>
     @endforeach
-<body>
+
+
+@endsection

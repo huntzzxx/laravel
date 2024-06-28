@@ -1,0 +1,17 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    color: black;
+}
+
+body {
+    /* background-color: lightblue; */
+    color: black;
+    padding: 30px;
+}
+
+#navbar img {
+    width: 50px;
+}
